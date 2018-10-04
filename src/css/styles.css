@@ -1,0 +1,426 @@
+/*General CSS For All Browser Compatible with devices*/
+
+/* Mini Framework 
+* * * * * *  * * *
+* * * * * * * * */
+
+*{
+    box-sizing: border-box;
+    }
+    html { 
+       -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        font-weight: 400;
+        text-rendering: optimizeLegibility;
+    } 
+
+    body{
+    width: 100%;
+    height: 100%;
+     font-family: 'Open Sans',sans-serif;
+    overflow: scroll;
+    overflow-x: hidden!important;
+    background: #fff;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+    a, blockquote, body, button, h1, h2, h3, h4, h5, h6, iframe, ol, p, ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: 0;
+    }
+    a, button, div, input, label, select, span, textarea,div {
+        -webkit-tap-highlight-color: transparent;
+    }
+    .row {
+        margin: 1% 0;
+        overflow: hidden;
+    }
+    .c12, .table {
+        width: 100%;
+    }
+    .c11{
+        width: 91.66%;
+    }
+    .c10{
+        width: 83.33%;
+    }
+    .c9{
+        width: 75%;
+    }
+    .c8{
+        width: 66.66%;
+    }
+    .c7{
+        width: 58.33%;
+    }
+    .c6{
+        width: 50%;
+    }
+    .c5{
+        width: 41.66%;
+    }
+    .c4{
+        width: 33.33%;
+    }
+    .c3{
+        width: 25%;
+    }
+    .c25{
+        width: 20%;
+    }
+    .c2{
+        width: 16.66%;
+    }
+    .c1{
+        width: 8.33%;
+    }
+    .col {
+        float: left;
+    }
+    .container {
+        margin: 0 20px;
+        width: auto;
+    }
+    /* Mini Frame Work Ends*/
+     
+   
+    /**
+    * Firefox specific rule
+    */
+    @-moz-document url-prefix(){
+        body {
+            font-weight: lighter !important;
+        }
+    }
+
+.head-section{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+    height: 50px;
+    clear: both;
+    top: 0;
+    left: 0;
+}
+.global-menu{
+    width: 250px;
+    background: #f5f5f5;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    height: 100%;
+    bottom: 0;
+    bottom: -50px;
+}
+
+
+.main-container {
+    width: 100%;
+    margin:58px auto auto;
+    position: relative;
+    padding-top: 10px;
+}
+.section-holder {
+    display: block;
+    background: #fff;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+
+
+.movie-list--wrapper{
+    width: 100%;
+    background: 0 0;
+    color: #444;
+    margin: 0;
+    padding: 8px;
+}
+.m-l-crd{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+    min-height: 200px;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background: #fff;
+    border-radius: 2px;
+}
+.s1-cover-shadow{
+    box-shadow: 0 2px 3px 1px rgba(0,0,0,.1), 0 3px 4px -1px rgba(0,0,0,.1);
+}
+.s2-cover-shadow{
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12), 0 5px 5px -3px rgba(0,0,0,.2);
+}
+.m-l-title{
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+    line-height: 40px;
+}
+.m-l-title h4{
+    font-size: 14px;
+    padding: 0px 12px;
+    font-weight: 600;
+
+}
+.text-wrap-hide {
+    text-transform: capitalize;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.loading{
+     background-image: url("data:image/gif;base64,R0lGODlhEAALAPIDAJSUlKWlpa2trXNzc4SEhHt7e1JSUmtrayH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCwADACwAAAIAEAAHAEACHgwQM4bKJgRQIM5RZb6b2uccySJ2mOVp6Cmlx2puBQAh+QQJCwAAACwAAAAABAALAAADDXhmWrUOPhPprPg+xRIAIfkECQsAAQAsAAAAAAoACwAAAyQYumd2ZAyiTClmADDqzVsXWJjGeWWIguf4mSLJxl80rQvjHAkAIfkECQsACAAsAAAAABAACwAABD0QyUnlMeZURMYgklEURgAAgTScQzgagCAAKuuS8VwDLSLiMhpixbvBgrve76gb2nwvEypp3HQ+1U3lkokAACH5BAkLAAUALAAAAQAQAAkAAAMuWLqsNIMEAIKaVQ26hQAK4IHFBnRfOGqcmBYuaaJkzJ42vJYcZhW+26BBLDwiCQAh+QQFCwAFACwAAAIAEAAHAAADJhgAUaXMkTEIEAK4m91YH6YV3PgBYUeKHlhubHGm4yuDUPMs+lQlACH5BAUUAAMALAwAAgAEAAcAAAIKDGAip7zQ4DKoAAA7");
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-bottom: 145%;
+    overflow:hidden;
+    }
+    /* Code which holds user actions on Cards*/
+    .usr-action--wrap{
+        width: 100%;
+        margin: 0px;
+        min-height: 35px;
+        border-top: 1px solid #eee;
+    }
+    .like-card,.share-card{
+        display: inline-block;
+        width: 50%;
+        font-size: 0.7em;
+        height: 100%;
+        line-height: 35px;
+        text-align: left;
+        padding-left: 5px;
+        cursor: pointer;
+    }
+    .share-card{
+        text-align: right;
+        padding-right: 5px;
+    }
+    .like-card .like-icon,.like-card .like-text,
+    .share-card .share-icon,.share-card .share-text{
+        display: inline-block;
+    }
+    .like-card .like-icon svg,.share-card .share-icon svg{
+        vertical-align: middle;
+        width: 18px;
+    }
+    .like-card .like-text,.share-card .share-text{
+        padding-left: 5px;
+    }
+   
+    /* Code Ends*/
+
+    /* Code holds General pagination css*/
+.pagination-list {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 4px;
+    padding: 1px 2px 4px 2px;
+    margin: 50px auto;
+    border-top: 1px solid #AEAEAE;
+    border-bottom: 1px solid #FFFFFF;
+    background-color: #DADADA;
+    background-image: -webkit-linear-gradient(top, #DBDBDB, #E2E2E2);
+    background-image:    -moz-linear-gradient(top, #DBDBDB, #E2E2E2);
+    background-image:     -ms-linear-gradient(top, #DBDBDB, #E2E2E2);
+    background-image:      -o-linear-gradient(top, #DBDBDB, #E2E2E2);
+    background-image:         linear-gradient(top, #DBDBDB, #E2E2E2);
+}
+.pagination-list .a-no, .pagination-list i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    color: #7D7D7D;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px 0 2px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.pagination-list .a-no {
+    margin: 0 2px 0 2px;
+    border-radius: 4px;
+    border: 1px solid #E3E3E3;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 0 #FFF, 0 1px 2px #666;
+    text-shadow: 0 1px 1px #FFF;
+    background-color: #E6E6E6;
+    background-image: -webkit-linear-gradient(top, #F3F3F3, #D7D7D7);
+    background-image:    -moz-linear-gradient(top, #F3F3F3, #D7D7D7);
+    background-image:     -ms-linear-gradient(top, #F3F3F3, #D7D7D7);
+    background-image:      -o-linear-gradient(top, #F3F3F3, #D7D7D7);
+    background-image:         linear-gradient(top, #F3F3F3, #D7D7D7);
+}
+.pagination-list i {
+    margin: 0 3px 0 3px;
+}
+.pagination-list .a-no.current {
+    border: 1px solid #E9E9E9;
+    box-shadow: 0 1px 1px #999;
+    background-color: #DFDFDF;
+    background-image: -webkit-linear-gradient(top, #D0D0D0, #EBEBEB);
+    background-image:    -moz-linear-gradient(top, #D0D0D0, #EBEBEB);
+    background-image:     -ms-linear-gradient(top, #D0D0D0, #EBEBEB);
+    background-image:      -o-linear-gradient(top, #D0D0D0, #EBEBEB);
+    background-image:         linear-gradient(top, #D0D0D0, #EBEBEB);
+}
+/*pagination css code ends*/
+
+/* Code holds sequence cards which intially appear*/
+.sequence-head--background{
+   background: #eee;
+    height: 20px;
+    width: 90%;
+    line-height: 21px;
+    margin: 10px auto;
+    vertical-align: middle;
+}
+.sequence-share-back{
+    width: 30%;
+    float: right;
+    background: #eee;
+}
+.sequence-like-back{
+    width: 30%;
+    float: left;
+    background: #eee;
+}
+/* code ends*/
+.error-message{
+    width: 100%;
+    margin: 100px auto auto;
+    font-size: 18px;
+    color: red;
+}
+/* * * * * * * * * *
+* * * * * * * * * *
+General CSS Ends*/
+
+
+/* Meadia Query for responsiveness
+* * ** * * * * *  * *
+* * * * * * * * * **/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25) , only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) { 
+    body{
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+}
+@media (min-width: 1510px){
+    .container {
+        margin: auto;
+        width: 1270px;
+    }
+}
+@media (min-width: 1410px){
+    .container {
+        margin: auto;
+        width: 1170px;
+    }
+}
+@media (min-width: 1310px){
+    .container {
+        margin: auto;
+        width: 1070px;
+    }
+}
+@media (min-width: 1260px){
+    .container {
+        margin: auto;
+        width: 986px;
+    }
+    .root-section{
+        width: auto;
+        margin-left: 250px
+    }
+    
+    
+}
+@media screen and (min-width:990px) and  (max-width: 1260px){
+    .container {
+        margin: auto;
+        width: 986px;
+    }
+    .global-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 479px ){
+    .c4,.c3,.c25{
+        width: 50%;
+    }
+    .container{
+        margin: auto;
+    }
+    .pagination-list .a-no, .pagination-list i {
+    width: 22px;
+    font-size: 10px;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:839px) and (orientation: landscape){
+    .c4,.c3,.c25{
+        width: 33.33%;
+    }
+    .pagination-list .a-no, .pagination-list i {
+    width: 28px;
+    font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 510px ) and (max-width: 900px){
+    .c4,.c3,.c25{
+        width: 33.33%;
+    }
+    .pagination-list .a-no, .pagination-list i {
+    width: 48px;
+    font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 800px ) and (max-width: 1024px) and (orientation: landscape){
+    .c4,.c3,.c25{
+        width: 25%;
+    }
+    .pagination-list .a-no, .pagination-list i {
+    width: 46px;
+    font-size: 14px;
+    }
+}
+@media screen and (max-width: 479px ),(min-width:480px) and (max-width:839px) and (orientation: landscape),
+(min-width: 510px ) and (max-width: 900px),(min-width: 800px ) and (max-width: 1024px) and (orientation: landscape){
+    /********************
+    * css for hide the left menu except Desktop
+    /* it can be handled in many cases*/
+    .global-menu{
+        display: none;
+    }
+
+}
+/* quries Ends*/
